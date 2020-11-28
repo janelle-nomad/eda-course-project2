@@ -1,11 +1,11 @@
 # Exploratory Data Analysis Project 2 by Janelle H
 library("data.table")
-# ggplot library
-library("ggplot2")
+# ggplot library not necessary for Question 2
 
 path <- getwd()
 download.file(url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
               , destfile = paste(path, "dataFiles.zip", sep = "/"))
+# unzip
 unzip(zipfile = "dataFiles.zip")
 
 SCC <- data.table::as.data.table(x = readRDS(file = "Source_Classification_Code.rds"))

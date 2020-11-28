@@ -1,5 +1,6 @@
 # Exploratory Data Analysis Project 2 by Janelle H
 library("data.table")
+library("ggplot2")
 
 path <- getwd()
 download.file(url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
